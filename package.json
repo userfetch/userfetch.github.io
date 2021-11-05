@@ -1,0 +1,24 @@
+{
+  "name": "userfetch.github.io",
+  "version": "0.0.1",
+  "description": "> super customizable, neofetch inspired tool to display github user stats",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/userfetch/userfetch.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/userfetch/userfetch.github.io/issues"
+  },
+  "homepage": "https://github.com/userfetch/userfetch.github.io#readme",
+  "devDependencies": {
+    "vitepress": "^0.20.1"
+  }
+}

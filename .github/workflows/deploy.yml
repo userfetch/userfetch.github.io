@@ -1,0 +1,39 @@
+name: Deploy with gh-pages
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: setup repo
+        uses: actions/checkout@v2
+
+      - name: setup node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+
+      - name: install dependencies
+        run: npm ci
+
+      - name: build
+        run: npm run build:github
+        
+      - name: pre deploy
+        run: |
+          chmod +x pre-deploy.sh
+          ./pre-deploy.sh
+
+      - name: deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: './docs/.vitepress/dist'
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          allow_empty_commit: true

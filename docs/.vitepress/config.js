@@ -1,4 +1,16 @@
 module.exports = {
   title: 'userfetch',
-  description: 'super customizable, neofetch inspired tool to display github user stats'
+  description:
+    'super customizable, neofetch inspired tool to display github user stats',
+  themeConfig: {
+    repo: 'userfetch/userfetch.js',
+    nav: [
+      { text: 'Home', link: '/' },
+      { text: 'Docs', link: '/docs/', activeMatch: '^/docs/' },
+    ],
+    sidebar: [
+      { text: 'Home', link: '/' },
+      { text: 'Docs', link: '/docs/' },
+    ],
+  },
 }

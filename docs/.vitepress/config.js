@@ -11,6 +11,9 @@ module.exports = {
     sidebar: [
       { text: 'Home', link: '/' },
       { text: 'Docs', link: '/docs/' },
+      { text: 'GitHub Actions', link: '/actions/', },
+      { text: 'Docker', link: '/docker/' },
+      { text: 'Showcase', link: '/showcase/' },
     ],
   },
 }

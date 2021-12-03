@@ -33,7 +33,7 @@
     <tr>
         <td><code>-s</code> <code>--svg</code></td>
         <td><em>[string] [optional]</em></td>
-        <td><blockquote>not yet implemented</blockquote>Path to save svg output to</td>
+        <td>Path to save svg output to</td>
     </tr>
     <tr>
         <td><code>-t</code> <code>--token</code></td>
@@ -68,7 +68,7 @@
 
 This file contains all customizable options. It must export `template` and `templateDeafult` functions.
 
-`symbols`, `colors`, `meta`, and `terminal` are optional.
+`symbols`, `colors`, `meta`, and `svgOptions` are optional.
 
 
 
@@ -204,7 +204,19 @@ The second argument to the template function. To see the complete list run `user
 
 ### colors
 
-This is an optional export. It can have `primary`, `secondary`, `tertiary`, `alternate` keys. The possible color values are `"black"`, `"red"`, `"green"`, `"yellow"`, `"blue"`, `"magenta"`, `"cyan"`, `"white"`, `"blackBright"`, `"redBright"`, `"greenBright"`, `"yellowBright"`, `"blueBright"`, `"magentaBright"`, `"cyanBright"`, `"whiteBright"`
+```js
+export const colors = {
+  primary: 'blueBright',
+  secondary: 'white',
+  tertiary: 'gray',
+  alternate: 'whiteBright',
+}
+```
+
+This is an optional export. It can have `primary`, `secondary`, `tertiary`, `alternate` keys.
+
+The possible color values are `"black"`, `"red"`, `"green"`, `"yellow"`, `"blue"`, `"magenta"`, `"cyan"`, `"white"`, `"blackBright"`, `"redBright"`, `"greenBright"`, `"yellowBright"`, `"blueBright"`, `"magentaBright"`, `"cyanBright"`, `"whiteBright"`
+
 #### primary
 
 Used in titles and info key
@@ -227,24 +239,83 @@ Used to color the ascii art
 
 ### symbols
 
+```js
+export const symbols = {
+  underline: '-',
+  infoSeparator: ':',
+  listMarker: '-',
+  columnSeparator: '   ',
+}
+```
+
 #### underline
 #### infoSeparator
 #### listMarker
+#### columnSeparator
 
 
 
 -----
 
-### terminal
+### svgOptions
 
-This is an optional export. These color values will be used to colorize the SVG output.
+```js
+export const svgOptions = {
+  colors: {
+    backgroundColor: '#18181b',
+    foregroundColor: '#fcfcfc',
+    black: '#232627',
+    red: '#ef4444',
+    green: '#22c55e',
+    yellow: '#eab308',
+    blue: '#3b82f6',
+    magenta: '#d946ef',
+    cyan: '#06b6d4',
+    white: '#f5f5f5',
+    blackBright: '#7f8c8d',
+    redBright: '#f87171',
+    greenBright: '#4ade80',
+    yellowBright: '#fde047',
+    blueBright: '#60a5fa',
+    magentaBright: '#e879f9',
+    cyanBright: '#22d3ee',
+    whiteBright: '#ffffff',
+  },
+  rows: 16,
+  cols: 80,
+  paddingX: 20,
+  paddingY: 15,
+  radius: 6,
+  fontSize: 13.6,
+  lineHeight: 19.72,
+}
+```
 
-> not yet implemented
+This is an optional export. This will be used to format the SVG output.
 
-#### background
+#### colors
 
-background color of the terminal
+Contains the following keys
 
-#### black / red / green / yellow / blue / magenta / cyan / white
+`backgroundColor`, `foregroundColor`, 
+`black`, `red`, `green`, `yellow`, `blue`, `magenta`, `cyan`, `white`, 
+`blackBright`, `redBright`, `greenBright`, `yellowBright`, `blueBright`, `magentaBright`, `cyanBright`, `whiteBright`
 
-#### blackBright / redBright / greenBright / yellowBright / blueBright / magentaBright / cyanBright / whiteBright
+The value is a valid CSS Color string.
+
+#### rows
+
+Number of rows in the terminal window
+
+#### cols
+
+Number of columns in the terminal window
+
+#### paddingX
+#### paddingY
+#### radius
+
+Border radius
+
+#### fontSize
+#### lineHeight

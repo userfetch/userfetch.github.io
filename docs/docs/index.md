@@ -2,6 +2,10 @@
 
 [[toc]]
 
+
+## Creating GitHub Personal Access Token
+
+[Click Here](https://github.com/settings/tokens/new?scopes=repo,read:packages,read:org,read:user,user:email) to generate your GitHub Personal Access Token
 ## CLI
 
 <table>
@@ -38,7 +42,7 @@
     <tr>
         <td><code>-t</code> <code>--token</code></td>
         <td><em>[boolean] [optional]</em></td>
-        <td>Asks for your GitHub PAT through stdin<br>The token must have <code>repo</code>, <code>read:org</code>, <code>read:user</code>, and <code>user:email</code> scopes</td>
+        <td>Asks for your GitHub PAT through stdin<br>The token must have <code>repo</code>, <code>read:org</code>, <code>read:packages</code>, <code>read:user</code>, and <code>user:email</code> scopes</td>
     </tr>
     <tr>
         <td><code>--ci</code></td>
@@ -194,7 +198,7 @@ right()
 
 #### variables
 
-The second argument to the template function. To see the complete list run `userfetch -debug`
+The second argument to the template function. To see the complete list run `userfetch --debug`
 
 `username`, `name`, `email`, `location`, `bio`, `status`, `followers`, `following`, `sponsors`, `sponsoring`, `gists`, `organizations`, `contributedTo`, `packages`, `projects`, `pullRequests`, `issues`, `starred`, `commits`, `repositories` ...
 

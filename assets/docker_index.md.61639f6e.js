@@ -1,4 +1,4 @@
-import{_ as a,c as s,o as n,a as t}from"./app.88c8e53b.js";const x='{"title":"Docker","description":"","frontmatter":{},"relativePath":"docker/index.md","lastUpdated":1638561383170}',e={},o=t(`<h1 id="docker" tabindex="-1">Docker <a class="header-anchor" href="#docker" aria-hidden="true">#</a></h1><div class="language-bash"><pre><code>docker pull aryan02420/userfetch
+import{_ as a,c as s,o as n,a as t}from"./app.88c8e53b.js";const x='{"title":"Docker","description":"","frontmatter":{},"relativePath":"docker/index.md","lastUpdated":1639991781800}',e={},o=t(`<h1 id="docker" tabindex="-1">Docker <a class="header-anchor" href="#docker" aria-hidden="true">#</a></h1><div class="language-bash"><pre><code>docker pull aryan02420/userfetch
 </code></pre></div><div class="language-bash"><pre><code>docker run <span class="token punctuation">\\</span>
   -i -t --rm <span class="token punctuation">\\</span>
   -v <span class="token string">&quot;/path/to/workdir&quot;</span><span class="token builtin class-name">:</span><span class="token string">&quot;/github/workspace/&quot;</span> <span class="token punctuation">\\</span>

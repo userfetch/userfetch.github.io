@@ -1,4 +1,4 @@
-import{_ as n,c as s,o as a,a as t}from"./app.88c8e53b.js";const y='{"title":"GitHub Actions","description":"","frontmatter":{},"relativePath":"actions/index.md","lastUpdated":1639991781800}',p={},e=t(`__VP_STATIC_START__<h1 id="github-actions" tabindex="-1">GitHub Actions <a class="header-anchor" href="#github-actions" aria-hidden="true">#</a></h1><div class="language-yaml"><pre><code><span class="token key atrule">on</span><span class="token punctuation">:</span>
+import{_ as n,c as s,o as a,a as t}from"./app.68943e64.js";const y='{"title":"GitHub Actions","description":"","frontmatter":{},"relativePath":"actions/index.md","lastUpdated":1640704330182}',p={},e=t(`<h1 id="github-actions" tabindex="-1">GitHub Actions <a class="header-anchor" href="#github-actions" aria-hidden="true">#</a></h1><div class="language-yaml"><pre><code><span class="token key atrule">on</span><span class="token punctuation">:</span>
   <span class="token key atrule">push</span><span class="token punctuation">:</span>
     <span class="token key atrule">branches</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>main<span class="token punctuation">]</span>
   <span class="token key atrule">workflow_dispatch</span><span class="token punctuation">:</span>
@@ -29,4 +29,4 @@ import{_ as n,c as s,o as a,a as t}from"./app.88c8e53b.js";const y='{"title":"Gi
           <span class="token key atrule">user_name</span><span class="token punctuation">:</span> <span class="token string">&#39;github-actions[bot]&#39;</span>
           <span class="token key atrule">user_email</span><span class="token punctuation">:</span> <span class="token string">&#39;github-actions[bot]@users.noreply.github.com&#39;</span>
           <span class="token key atrule">allow_empty_commit</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
-</code></pre></div>__VP_STATIC_END__`,2),o=[e];function c(u,l,k,i,r,_){return a(),s("div",null,o)}var d=n(p,[["render",c]]);export{y as __pageData,d as default};
+</code></pre></div>`,2),o=[e];function c(u,l,k,i,r,_){return a(),s("div",null,o)}var d=n(p,[["render",c]]);export{y as __pageData,d as default};

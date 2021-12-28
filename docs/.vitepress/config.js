@@ -4,6 +4,7 @@ module.exports = {
     'super customizable, neofetch inspired tool to display github user stats',
   themeConfig: {
     repo: 'userfetch/userfetch.js',
+    lastUpdated: 'Last Updated',
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Docs', link: '/docs/', activeMatch: '^/docs/' },
@@ -11,7 +12,7 @@ module.exports = {
     sidebar: [
       { text: 'Home', link: '/' },
       { text: 'Docs', link: '/docs/' },
-      { text: 'GitHub Actions', link: '/actions/', },
+      { text: 'GitHub Actions', link: '/actions/' },
       { text: 'Docker', link: '/docker/' },
       { text: 'Showcase', link: '/showcase/' },
     ],

@@ -6,6 +6,7 @@
 ## Creating GitHub Personal Access Token
 
 [Click Here](https://github.com/settings/tokens/new?scopes=repo,read:packages,read:org,read:user,user:email) to generate your GitHub Personal Access Token. `repo`, `read:packages`, `read:org`, `read:user`, `user:email` scopes are required.
+
 ## CLI
 
 <table>
@@ -32,7 +33,7 @@
     <tr>
         <td><code>-c</code> <code>--config</code></td>
         <td><em>[string] [optional]</em></td>
-        <td>Path to a custom <code>.mjs</code> config file</td>
+        <td>Path to a custom <code>.mjs</code> config file<br>Required when used with <code>--ci</code></td>
     </tr>
     <tr>
         <td><code>-s</code> <code>--svg</code></td>
@@ -42,7 +43,7 @@
     <tr>
         <td><code>-t</code> <code>--token</code></td>
         <td><em>[boolean] [optional]</em></td>
-        <td>Asks for your GitHub PAT through stdin<br>The token must have <code>repo</code>, <code>read:org</code>, <code>read:packages</code>, <code>read:user</code>, and <code>user:email</code> scopes</td>
+        <td>Asks for your GitHub PAT through stdin<br>The token must have <code>repo</code>, <code>read:org</code>, <code>read:packages</code>, <code>read:user</code>, and <code>user:email</code> scopes<br>No effect when used with <code>--ci</code></td>
     </tr>
     <tr>
         <td><code>--ci</code></td>
@@ -57,7 +58,7 @@
     <tr>
         <td><code>--first-run</code> <code>--firstrun</code></td>
         <td><em>[boolean] [optional]</em></td>
-        <td><blockquote>WARNING: This will overwrite your config file with default one</blockquote>Trigger the firstrun script</td>
+        <td><blockquote>WARNING: This will overwrite your config file with default one</blockquote>Trigger the firstrun script<br>No effect when used with <code>--ci</code></td>
     </tr>
     <tr>
         <td><code>-d</code> <code>--debug</code></td>

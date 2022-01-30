@@ -4,11 +4,10 @@
 > super customizable, neofetch inspired tool to display github user stats
 
 
-![build] ![downloads] ![stars] [![docs]](https://userfetch.js.org/docs/) ![language] ![license] ![version] ![actions]
+[![build]](https://github.com/userfetch/userfetch.js/actions/workflows/test.yml) [![downloads]](https://www.npmjs.com/package/userfetch) [![stars]](https://github.com/userfetch/userfetch.js/stargazers) [![docs]](https://userfetch.js.org/docs/) ![language] [![license]](https://github.com/userfetch/userfetch.js/blob/main/LICENSE.md) ![version] [![actions]](https://github.com/userfetch/userfetch-action)
 
 
 ![screenshot](https://user-images.githubusercontent.com/58023300/135974115-ec2c3616-1bb6-4099-bc9b-0d4153a75893.png)
-
 
 
 ## Install
@@ -25,6 +24,9 @@ npm i -g userfetch
 userfetch
 ```
 
+## Docker
+
+You can also install through Docker. Instructions can be found [here](/docker/)
 
 
 [build]: https://img.shields.io/github/workflow/status/userfetch/userfetch.js/test?label=Build&style=flat-square "build status"

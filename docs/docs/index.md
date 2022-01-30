@@ -5,7 +5,7 @@
 
 ## Creating GitHub Personal Access Token
 
-[Click Here](https://github.com/settings/tokens/new?scopes=repo,read:packages,read:org,read:user,user:email) to generate your GitHub Personal Access Token
+[Click Here](https://github.com/settings/tokens/new?scopes=repo,read:packages,read:org,read:user,user:email) to generate your GitHub Personal Access Token. `repo`, `read:packages`, `read:org`, `read:user`, `user:email` scopes are required.
 ## CLI
 
 <table>
@@ -219,21 +219,29 @@ export const colors = {
 
 This is an optional export. It can have `primary`, `secondary`, `tertiary`, `alternate` keys.
 
-The possible color values are `"black"`, `"red"`, `"green"`, `"yellow"`, `"blue"`, `"magenta"`, `"cyan"`, `"white"`, `"blackBright"`, `"redBright"`, `"greenBright"`, `"yellowBright"`, `"blueBright"`, `"magentaBright"`, `"cyanBright"`, `"whiteBright"`
+The possible color values are `'black'`, `'red'`, `'green'`, `'yellow'`, `'blue'`, `'magenta'`, `'cyan'`, `'white'`, `'blackBright'`, `'redBright'`, `'greenBright'`, `'yellowBright'`, `'blueBright'`, `'magentaBright'`, `'cyanBright'`, `'whiteBright'`
 
 #### primary
+
+> DEFAULT: blueBright
 
 Used in titles and info key
 
 #### secondary
 
+> DEFAULT: white
+
 Used in text, list text, info value
 
 #### tertiary
 
+> DEFAULT: gray
+
 Used to color symbols like bullets and underline
 
 #### alternate
+
+> DEFAULT: whiteBright
 
 Used to color the ascii art
 
@@ -253,9 +261,29 @@ export const symbols = {
 ```
 
 #### underline
+
+> DEFAULT: `-`
+
+character to be used as underline
+
 #### infoSeparator
+
+> DEFAULT: `:`
+
+character to be used as separator of key and value
+
 #### listMarker
+
+> DEFAULT: `-`
+
+character to be used as bullet in list
+
 #### columnSeparator
+
+> DEFAULT: `   `
+
+character to be used as underline
+
 
 
 
@@ -309,17 +337,41 @@ The value is a valid CSS Color string.
 
 #### rows
 
+> DEFAULT: 16
+
 Number of rows in the terminal window
 
 #### cols
 
+> DEFAULT: 80
+
 Number of columns in the terminal window
 
 #### paddingX
+
+> DEFAULT: 20
+
+horizontal padding between the terminal window and text in pixels
+
 #### paddingY
+
+> DEFAULT: 15
+
+vertical padding between the terminal window and text in pixels
 #### radius
 
-Border radius
+> DEFAULT: 6
+
+Border radius of the terminal window in pixels
 
 #### fontSize
+
+> DEFAULT: 13.6
+
+font size of text inside terminal in pixels
+
 #### lineHeight
+
+> DEFAULT: 19.72
+
+line height of text inside terminal in pixels

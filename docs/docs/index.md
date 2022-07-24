@@ -51,9 +51,9 @@
         <td>Continuous Integration mode<br>Disables writing to and reading of config dir<br>Requires <code>--config</code><br>Disables <code>--token</code> <code>--first-run</code></td>
     </tr>
     <tr>
-        <td><code>--no-color</code> <code>--nocolor</code></td>
+        <td><code>--color</code> <code>--no-color</code></td>
         <td><em>[boolean] [optional]</em></td>
-        <td><blockquote>not yet implemented</blockquote>Disables colored output in terminal</td>
+        <td>Enable/Disable colored output in terminal<br/>Automatically inferred if flag is absent</td>
     </tr>
     <tr>
         <td><code>--first-run</code> <code>--firstrun</code></td>

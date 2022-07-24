@@ -23,24 +23,21 @@ jobs:
         uses: actions/checkout@v2
 
       - name: userfetch
-        uses: userfetch/userfetch-action@v1
+        uses: userfetch/userfetch-action@v1.1
         with:
           # path is relative to project root
-          config: 'path/to/config.mjs'
-          svg: 'path/to/card.svg'
+          config: 'path/to/config.mjs'   # input
+          svg: 'path/to/card.svg'        # output
         env:
           # the token you created in step 2
           github_token: ${{ secrets.GH_PAT }}
 
       - name: commit
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          # this token is provided by default by github
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .
-          publish_branch: main
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
-          allow_empty_commit: false
-          full_commit_message: '🤖 Daily update!'
+        run: |
+          git config --local user.name 'github-actions[bot]'
+          git config --local user.email 'github-actions[bot]@users.noreply.github.com'
+          git commit -am '🤖 Daily update!' | true
+          git push
 ```
+
+You can see it in action [here](https://github.com/aryan02420/aryan02420/blob/main/.github/workflows/userfetch.yml)

@@ -22,8 +22,9 @@ docker run \
 ```bash
 docker run \
   -i -t --rm \
+  -u "$(id -u):$(id -g)" \
   -v "${PWD}:/workspace" \
-  -v "${HOME}/.userfetch:/root/.userfetch" \
+  -v "${HOME}/.userfetch:/home/node/.userfetch" \
   aryan02420/userfetch:v1 --first-run"
 ```
 
@@ -32,8 +33,9 @@ docker run \
 ```bash
 docker run \
   -i -t --rm \
+  -u "$(id -u):$(id -g)" \
   -v "${PWD}:/workspace" \
-  -v "${HOME}/.userfetch:/root/.userfetch" \
+  -v "${HOME}/.userfetch:/home/node/.userfetch" \
   aryan02420/userfetch:v1
 ```
 
@@ -44,8 +46,9 @@ You can create a bash alias to avoid typing the long command
 ```bash
 alias userfetch='docker run \
   -i -t --rm \
+  -u "$(id -u):$(id -g)" \
   -v "${PWD}:/workspace" \
-  -v "${HOME}/.userfetch:/root/.userfetch" \
+  -v "${HOME}/.userfetch:/home/node/.userfetch" \
   aryan02420/userfetch:v1'
 userfetch
 ```

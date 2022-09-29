@@ -321,6 +321,7 @@ export const svgOptions = {
   radius: 6,
   fontSize: 13.6,
   lineHeight: 19.72,
+  animationDuration: 1000,
 }
 ```
 
@@ -376,3 +377,9 @@ font size of text inside terminal in pixels
 > DEFAULT: 19.72
 
 line height of text inside terminal in pixels
+
+#### animationDuration
+
+> DEFAULT: 1000
+
+Time (in ms) it takes for all the lines to animate in. If set to `0`, animation will be disabled

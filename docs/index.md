@@ -29,7 +29,7 @@ userfetch
 You can also install through Docker. Instructions can be found [here](/docker/)
 
 
-[build]: https://img.shields.io/github/workflow/status/userfetch/userfetch.js/test?label=Build&style=flat-square "build status"
+[build]: https://img.shields.io/github/actions/workflow/status/userfetch/userfetch.js/test.yml?branch=main&label=Build&style=flat-square "build status"
 
 [downloads]: https://img.shields.io/npm/dt/userfetch?color=%23cb0000&label=Downloads&logoColor=%23ffff00&style=flat-square "npm downloads"
 
